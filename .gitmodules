@@ -1,0 +1,3 @@
+[submodule "tabloid-core"]
+	path = tabloid-core
+	url = https://github.com/graciegould/tabloid-core.git

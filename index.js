@@ -10,12 +10,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors({
     origin: 'http://localhost:3000'
 }));
+
+
 const streams = require('./routes/streams');
 const users = require('./routes/users');
 app.use('/streams', streams);
 app.use('/users', users);
-app.get('/', (req, res) => {
-    res.send('Hello World');
-});
+
 
 app.listen(port, () => console.log(`Server is running on http://${host}:${port}`));
