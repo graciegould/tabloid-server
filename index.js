@@ -11,6 +11,7 @@ app.use(cors({
     origin: 'http://localhost:3000'
 }));
 
+const models = require('./models/base-schema');
 
 const streams = require('./routes/streams');
 const users = require('./routes/users');
